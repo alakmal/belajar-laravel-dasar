@@ -48,3 +48,6 @@ Route::get("/produk-redirect/{id}", function ($id) {
 })->name("produk.redirect");
 
 Route::get("/controller/hello/{name}", [HelloController::class, "hello"]);
+
+Route::post("/input/hello", [\App\Http\Controllers\InputController::class, "hello"])
+    ->name("input.hello");
