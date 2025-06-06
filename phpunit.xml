@@ -16,6 +16,9 @@
     <testsuite name="controller">
 <file>./tests/Feature/ControllerTest.php</file>
     </testsuite>
+    <testsuite name="request">
+<file>./tests/Feature/RequestTest.php</file>
+    </testsuite>
   </testsuites>
 
   <php>
