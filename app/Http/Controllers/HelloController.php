@@ -17,6 +17,6 @@ class HelloController extends Controller
 
     public function hello(string $name): string
     {
-        return $this->helloService->hello('World');
+        return $this->helloService->hello($name);
     }
 }
