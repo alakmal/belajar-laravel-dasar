@@ -7,15 +7,7 @@
     <testsuite name="Feature">
       <directory suffix="Test.php">./tests/Feature</directory>
     </testsuite>
-    <testsuite name="facade">
-    <file>./tests/Unit/FacadeTest.php</file>
-    </testsuite>
-    <testsuite name="route">
-<file>./tests/Feature/RoutingTest.php</file>
-    </testsuite>
-    <testsuite name="controller">
-<file>./tests/Feature/ControllerTest.php</file>
-    </testsuite>
+
   </testsuites>
 
   <php>
