@@ -8,8 +8,8 @@
       <directory suffix="Test.php">./tests/Feature</directory>
     </testsuite>
 
-    <testsuite name="encrypt">
-      <file >./tests/Feature/EncryptTest.php</file>
+    <testsuite name="redirect">
+      <file >./tests/Feature/RedirectTest.php</file>
     </testsuite>
 
   </testsuites>

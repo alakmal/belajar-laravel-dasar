@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\HelloController;
+use App\Http\Controllers\RedirectController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,3 +17,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get("/redirect/from", [RedirectController::class, "redirectFrom"]);
+Route::get("/redirect/to", [RedirectController::class, "redirectTo"]);
+
+Route::get("/redirect/name", [RedirectController::class, "redirectName"]);
+
+Route::get("/redirect/name/{name}", [RedirectController::class, "redirectHello"])->name("redirect.hello");
+
+Route::get("/redirect/action", [RedirectController::class, "redirectAction"]);
+
+Route::get("/redirect/pzn", [RedirectController::class, "redirectAway"]);
